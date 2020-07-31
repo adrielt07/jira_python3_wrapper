@@ -1,0 +1,15 @@
+*~
+\#*\#
+
+*.pyc
+__pycache__
+
+# C
+*.so
+
+# Env / packages
+wheels/
+.venv
+.virtualenv
+*.pex
+*.rpm
