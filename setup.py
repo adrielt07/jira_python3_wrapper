@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setup(
-    name=sys.argv[1],
+    name='testfile', # Change the name
     packages=find_packages(),
     license='None',
     version='0.0.1',
@@ -19,9 +19,9 @@ setup(
         'control_scripts': [
             'cli=testfolder.testfile:main',
         ],
-    }
+    },
     classifiers=[
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-    ]
+    ],
 )
