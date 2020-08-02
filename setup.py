@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setup(
-    name='testfile', # Change the name
+    name='jiraclient', # Change the name
     packages=find_packages(),
     license='None',
     version='0.0.1',
@@ -17,7 +17,7 @@ setup(
     install_requires=required,
     entry_point={
         'control_scripts': [
-            'cli=testfolder.testfile:main',
+            'cli=jiraclient.cli:main',
         ],
     },
     classifiers=[
