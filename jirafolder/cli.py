@@ -1,4 +1,4 @@
-import jiraclient
+from jiraclient import JiraClient
 
 def main():
     pass
