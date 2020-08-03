@@ -24,13 +24,3 @@ class JiraClient():
 
     def __str__(self):
         return ("Endpoint: {} User: {}".format(self.endpoint, self.user))
-
-
-if __name__ == '__main__':
-    api = os.environ['JIRA_API']
-    user = os.environ['JIRA_USER']
-    endpoint = os.environ['JIRA_ENDPOINT']
-    jira = JiraClient(endpoint, user, api)
-    ticket = 'CW-24'
-    sum = jira.get_ticket_summary(ticket)
-    print(sum)
