@@ -18,11 +18,6 @@ setup(
     packages_dir={
         'jiraclient': 'jiraclient'
     },
-    entry_point={
-        'control_scripts': [
-            'cli=jiraclient.cli:main',
-        ],
-    },
     classifiers=[
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
